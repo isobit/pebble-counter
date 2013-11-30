@@ -3,3 +3,4 @@ build
 makefile
 nbproject
 .lock-waf_darwin_build
+wscript
