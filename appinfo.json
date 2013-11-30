@@ -1,0 +1,17 @@
+{
+  "uuid": "bc85389c-a6aa-4af9-bfd9-1f26fe47e95f",
+  "shortName": "Counter",
+  "longName": "Counter",
+  "companyName": "Nominal Technology",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
