@@ -1,7 +1,9 @@
 #include <pebble.h>
 #include <ui.h>
 
-static int count = 0;
+#define COUNT_PKEY 1
+#define COUNT_DEFAULT 0
+static int count= COUNT_DEFAULT;
 
 static void update() {
     static char count_text[100];
@@ -50,6 +52,7 @@ static void click_config_provider(void *context) {
 }
 
 static void init(void) {
+    count = persist_exists(COUNT_PKEY) ? persist_read_int(COUNT_PKEY) : COUNT_DEFAULT;
     ui_load();
     update();
     window_set_click_config_provider(parent_window, click_config_provider);
@@ -57,6 +60,7 @@ static void init(void) {
 }
 
 static void deinit(void) {
+    persist_write_int(COUNT_PKEY, count);
     ui_unload();
 }
 
