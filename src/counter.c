@@ -32,12 +32,12 @@ static void select_click_handler_long(ClickRecognizerRef recognizer, void *conte
 }
 
 static void up_click_handler_long(ClickRecognizerRef recognizer, void *context) {
-    count += 10;
+    count += 5;
     update();
 }
 
 static void down_click_handler_long(ClickRecognizerRef recognizer, void *context) {
-    count -= 10;
+    count -= 5;
     update();
 }
 
