@@ -12,6 +12,12 @@
     "dummy": 0
   },
   "resources": {
-    "media": []
+    "media": [
+	    {
+		    "type": "font",
+		    "name": "VISITOR_48",
+		    "file": "fonts/visitor-mono-numbers.otf"
+	    }
+	]
   }
 }

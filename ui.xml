@@ -4,9 +4,13 @@
 	bg-color="black"
 	fullscreen="false"
 >
+	<custom_font 
+		id="VISITOR_LARGE"
+		resource-name="VISITOR_48" 
+	/>
 	<text_layer
 		id="count_text_layer"
-		font="BITHAM_42_MEDIUM_NUMBERS"
+		font="VISITOR_LARGE"
 		text-align="center"
 		theme="dark"
 		y="50"
